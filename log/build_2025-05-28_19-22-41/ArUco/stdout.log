@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ArUco[0m
+[100%] Built target ArUco
+-- Install configuration: ""
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco
+-- Set runtime path of "/home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco" to ""
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/package_run_dependencies/ArUco
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/parent_prefix_path/ArUco
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.sh
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.dsv
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.sh
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.dsv
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.bash
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.sh
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.zsh
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.dsv
+-- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.dsv
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/packages/ArUco
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig.cmake
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig-version.cmake
+-- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.xml

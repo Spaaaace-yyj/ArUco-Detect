@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+24ecc31377c37d8af45d92ae21637228 CMakeFiles/dji_action4_camera_uninstall

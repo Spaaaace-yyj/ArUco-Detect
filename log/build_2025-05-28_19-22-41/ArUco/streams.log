@@ -1,0 +1,47 @@
+[0.009s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.028s] [ 50%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[0.934s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&)[m[K’:
+[0.934s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:15:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.934s]    15 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[0.934s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.936s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:19:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.936s]    19 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+[0.936s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.938s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[0.938s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:44:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.938s]    44 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[0.938s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.942s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.942s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:124:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.942s]   124 |                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[0.942s]       |                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[0.942s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:127:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[0.942s]   127 |                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[0.942s]       |                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[1.293s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[1.294s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:54:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.294s]    54 | [01;35m[K}[m[K
+[1.294s]       | [01;35m[K^[m[K
+[1.461s] [100%] [32m[1mLinking CXX executable ArUco[0m
+[1.768s] [100%] Built target ArUco
+[1.776s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[1.798s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco
+[1.800s] -- Install configuration: ""
+[1.800s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco
+[1.801s] -- Set runtime path of "/home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco" to ""
+[1.801s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/package_run_dependencies/ArUco
+[1.801s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/parent_prefix_path/ArUco
+[1.801s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.sh
+[1.801s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.dsv
+[1.801s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.sh
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.dsv
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.bash
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.sh
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.zsh
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.dsv
+[1.802s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.dsv
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/packages/ArUco
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig.cmake
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig-version.cmake
+[1.802s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.xml
+[1.804s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco

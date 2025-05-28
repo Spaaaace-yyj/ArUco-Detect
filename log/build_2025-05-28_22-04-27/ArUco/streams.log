@@ -1,0 +1,57 @@
+[0.011s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/ArUco
+[0.047s] -- The C compiler identification is GNU 11.4.0
+[0.095s] -- The CXX compiler identification is GNU 11.4.0
+[0.103s] -- Detecting C compiler ABI info
+[0.145s] -- Detecting C compiler ABI info - done
+[0.154s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.154s] -- Detecting C compile features
+[0.154s] -- Detecting C compile features - done
+[0.156s] -- Detecting CXX compiler ABI info
+[0.210s] -- Detecting CXX compiler ABI info - done
+[0.219s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.219s] -- Detecting CXX compile features
+[0.219s] -- Detecting CXX compile features - done
+[0.221s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.451s] -- Found Python3: /home/spaaaaace/anaconda3/envs/vision/bin/python3 (found version "3.8.20") found components: Interpreter 
+[0.509s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.539s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.543s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.548s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.557s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.568s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.600s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.601s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.669s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.693s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.724s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.729s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.775s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.776s] -- Found Threads: TRUE  
+[0.818s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[0.819s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.844s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.847s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.854s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.924s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.933s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.934s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.934s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.942s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[0.942s]   By not providing "FindEigen.cmake" in CMAKE_MODULE_PATH this project has
+[0.942s]   asked CMake to find a package configuration file provided by "Eigen", but
+[0.942s]   CMake did not find one.
+[0.942s] 
+[0.942s]   Could not find a package configuration file provided by "Eigen" with any of
+[0.942s]   the following names:
+[0.942s] 
+[0.942s]     EigenConfig.cmake
+[0.942s]     eigen-config.cmake
+[0.942s] 
+[0.942s]   Add the installation prefix of "Eigen" to CMAKE_PREFIX_PATH or set
+[0.942s]   "Eigen_DIR" to a directory containing one of the above files.  If "Eigen"
+[0.942s]   provides a separate development package or SDK, be sure it has been
+[0.942s]   installed.
+[0.943s] 
+[0.943s] [0m
+[0.943s] -- Configuring incomplete, errors occurred!
+[0.948s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/ArUco

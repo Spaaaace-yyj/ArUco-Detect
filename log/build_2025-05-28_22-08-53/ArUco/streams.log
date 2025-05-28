@@ -1,0 +1,41 @@
+[0.010s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.038s] [ 50%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[2.252s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&)[m[K’:
+[2.252s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:25:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.252s]    25 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.252s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.254s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:29:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.254s]    29 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+[2.254s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.255s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[2.256s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:54:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.256s]    54 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.256s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.334s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.334s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:147:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.334s]   147 |                                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[2.334s]       |                                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[2.340s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:152:56:[m[K [01;31m[Kerror: [m[K‘[01m[Krvecs[m[K’ was not declared in this scope; did you mean ‘[01m[Krvec[m[K’?
+[2.340s]   152 |                                         cv::Mat rvec = [01;31m[Krvecs[m[K[i];  // 旋转向量（3x1矩阵）
+[2.340s]       |                                                        [01;31m[K^~~~~[m[K
+[2.340s]       |                                                        [32m[Krvec[m[K
+[2.360s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:172:85:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+[2.360s]   172 |         transform_stamped.transform.translation.x = tvec.at<[01;31m[Kdouble[m[K>(0);
+[2.360s]       |                                                             [01;31m[K^~~~~~[m[K
+[2.360s] 
+[2.360s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:173:85:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+[2.360s]   173 |         transform_stamped.transform.translation.y = tvec.at<[01;31m[Kdouble[m[K>(1);
+[2.360s]       |                                                             [01;31m[K^~~~~~[m[K
+[2.360s] 
+[2.360s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:174:85:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+[2.360s]   174 |         transform_stamped.transform.translation.z = tvec.at<[01;31m[Kdouble[m[K>(2);
+[2.360s]       |                                                             [01;31m[K^~~~~~[m[K
+[2.360s] 
+[4.302s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[4.302s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:64:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[4.302s]    64 | [01;35m[K}[m[K
+[4.302s]       | [01;35m[K^[m[K
+[4.477s] gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+[4.477s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+[4.477s] gmake: *** [Makefile:146：all] 错误 2
+[4.479s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22

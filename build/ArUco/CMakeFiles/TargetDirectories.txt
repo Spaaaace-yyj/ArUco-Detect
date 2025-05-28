@@ -1,0 +1,10 @@
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/uninstall.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/ArUco_uninstall.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/ArUco.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/test.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/edit_cache.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/rebuild_cache.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/list_install_components.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/install.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/install/local.dir
+/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles/install/strip.dir

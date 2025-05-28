@@ -1,0 +1,55 @@
+[0.006s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/ArUco
+[0.046s] -- The C compiler identification is GNU 11.4.0
+[0.083s] -- The CXX compiler identification is GNU 11.4.0
+[0.091s] -- Detecting C compiler ABI info
+[0.140s] -- Detecting C compiler ABI info - done
+[0.148s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.148s] -- Detecting C compile features
+[0.148s] -- Detecting C compile features - done
+[0.150s] -- Detecting CXX compiler ABI info
+[0.205s] -- Detecting CXX compiler ABI info - done
+[0.214s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.214s] -- Detecting CXX compile features
+[0.214s] -- Detecting CXX compile features - done
+[0.216s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.467s] -- Found Python3: /home/spaaaaace/anaconda3/envs/vision/bin/python3 (found version "3.8.20") found components: Interpreter 
+[0.538s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.572s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.577s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.583s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.593s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.606s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.643s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.645s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.718s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.741s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.779s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.785s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.837s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.838s] -- Found Threads: TRUE  
+[0.893s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[0.895s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.925s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.929s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.980s] WARNING: Package name "ArUco" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.011s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.011s] -- Configured cppcheck include dirs: 
+[1.011s] -- Configured cppcheck exclude dirs and/or files: 
+[1.011s] -- Added test 'lint_cmake' to check CMake code style
+[1.012s] -- Added test 'uncrustify' to check C / C++ code style
+[1.012s] -- Configured uncrustify additional arguments: 
+[1.012s] -- Added test 'xmllint' to check XML markup files
+[1.015s] -- Configuring done (1.0s)
+[1.022s] -- Generating done (0.0s)
+[1.023s] -- Build files have been written to: /home/spaaaaace/Code/ArUco/build/ArUco
+[1.030s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/ArUco
+[1.033s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[1.052s] [ 50%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[1.150s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kopencv.hpp: 没有那个文件或目录
+[1.150s]     3 | #include [01;31m[K<opencv.hpp>[m[K
+[1.150s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[1.150s] compilation terminated.
+[1.152s] gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+[1.152s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+[1.152s] gmake: *** [Makefile:146：all] 错误 2
+[1.154s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22

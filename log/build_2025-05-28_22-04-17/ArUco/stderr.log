@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:18 (find_package):
+  By not providing "FindEigen.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Eigen", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Eigen" with any of
+  the following names:
+
+    EigenConfig.cmake
+    eigen-config.cmake
+
+  Add the installation prefix of "Eigen" to CMAKE_PREFIX_PATH or set
+  "Eigen_DIR" to a directory containing one of the above files.  If "Eigen"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+[0m
+gmake: *** [Makefile:267：cmake_check_build_system] 错误 1

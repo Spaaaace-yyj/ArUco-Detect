@@ -1,0 +1,2 @@
+Invoking command in '/home/spaaaaace/Code/ArUco/build/buff_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/buff_detect
+Invoked command in '/home/spaaaaace/Code/ArUco/build/buff_detect' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vision) /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/buff_detect
