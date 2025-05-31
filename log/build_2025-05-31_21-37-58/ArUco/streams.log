@@ -1,0 +1,53 @@
+[0.009s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.040s] [ 33%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[0.040s] [ 66%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/kalman.cpp.o[0m
+[2.323s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&, bool)[m[K’:
+[2.323s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:28:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.323s]    28 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.323s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.325s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:32:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.325s]    32 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+[2.325s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.327s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[2.327s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:62:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.327s]    62 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.327s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.331s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K At global scope:
+[2.331s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:87:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ does not name a type
+[2.331s]    87 |         [01;31m[Kvisualization_msgs[m[K::msg::Marker makeMarker(const geometry_msgs::msg::Pose &pose) {
+[2.331s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.428s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.428s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:252:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.429s]   252 |                                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[2.429s]       |                                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[2.429s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:270:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.429s]   270 |                                         for(int i = 0; [01;35m[Ki < imgPts.size()[m[K; i++){
+[2.429s]       |                                                        [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[2.430s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:289:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.430s]   289 |                                         for(int i = 0; [01;35m[Ki < imgPts_rect.size()[m[K; i++){
+[2.430s]       |                                                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[2.436s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:293:59:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+[2.436s]   293 |                                         auto marker_pub = [01;31m[Knode[m[K->create_publisher<visualization_msgs::msg::Marker>("visualization_marker", 10);
+[2.436s]       |                                                           [01;31m[K^~~~[m[K
+[2.436s]       |                                                           [32m[KNode[m[K
+[2.436s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:293:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ has not been declared
+[2.436s]   293 |                              auto marker_pub = node->create_publisher<[01;31m[Kvisualization_msgs[m[K::msg::Marker>("visualization_marker", 10);
+[2.436s]       |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.436s] 
+[2.436s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:293:115:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[2.436s]   293 |  marker_pub = node->create_publisher<visualization_msgs::msg::Marker>([01;35m[K"visualization_marker"[m[K, 10);
+[2.436s]       |                                                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.436s] 
+[2.436s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:297:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisualization_msgs[m[K’ has not been declared
+[2.436s]   297 |                                         [01;31m[Kvisualization_msgs[m[K::msg::Marker marker = makeMarker(pose);
+[2.436s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.441s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:299:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker[m[K’ was not declared in this scope
+[2.441s]   299 |                                         marker_pub->publish([01;31m[Kmarker[m[K);
+[2.441s]       |                                                             [01;31m[K^~~~~~[m[K
+[2.441s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:255:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance_real[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.441s]   255 |                                         double [01;35m[Kdistance_real[m[K = calculateDistanceToCamera(rvec[i], tvec[i], cv::Point3f(0, 0, 0));
+[2.441s]       |                                                [01;35m[K^~~~~~~~~~~~~[m[K
+[4.603s] gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+[4.603s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+[4.603s] gmake: *** [Makefile:146：all] 错误 2
+[4.605s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22

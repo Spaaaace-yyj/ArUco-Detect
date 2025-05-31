@@ -135,12 +135,12 @@ CMakeFiles/ArUco_uninstall.dir/clean:
 CMakeFiles/ArUco.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles --progress-num=1,2 "Built target ArUco"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles --progress-num=1,2,3 "Built target ArUco"
 .PHONY : CMakeFiles/ArUco.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ArUco.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ArUco.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles 0
 .PHONY : CMakeFiles/ArUco.dir/rule

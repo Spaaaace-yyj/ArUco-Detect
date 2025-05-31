@@ -1,0 +1,138 @@
+[0.012s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.042s] [ 33%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[2.314s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&, bool)[m[K’:
+[2.314s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:29:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.315s]    29 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.315s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.316s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:33:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.316s]    33 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+[2.316s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.318s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[2.318s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:63:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.318s]    63 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.318s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.384s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker ArucoDetect::makeMarker(const Pose&, const string&, const string&, cv::Scalar)[m[K’:
+[2.384s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:92:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kframe_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.384s]    92 |                         [01;35m[Kconst std::string &frame_id = "camera"[m[K,
+[2.384s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.384s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:93:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kchild_frame_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.384s]    93 |                         [01;35m[Kconst std::string &child_frame_id = "Aruco"[m[K,
+[2.384s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.402s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::Pose ArucoDetect::cvToPose(const cv::Mat&, const cv::Mat&)[m[K’:
+[2.402s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;31m[Kerror: [m[Kclass template argument deduction failed:
+[2.403s]   136 |                 Eigen::Quaternion [01;31m[Kq_rot[m[K;
+[2.403s]       |                                   [01;31m[K^~~~~[m[K
+[2.403s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQuaternion()[m[K’
+[2.403s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.403s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.403s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:323:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options> Quaternion(Eigen::Quaternion<_Scalar, _Options>&&)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.403s]   323 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K(Quaternion&& other) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_constructible<Scalar>::value)
+[2.403s]       |                            [01;36m[K^~~~~~~~~~[m[K
+[2.403s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:323:28:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.403s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.403s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.403s]       |                                   [01;36m[K^~~~~[m[K
+[2.403s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.403s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.403s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:317:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options, class OtherScalar, int OtherOptions> Quaternion(const Eigen::Quaternion<OtherScalar, OtherOptions>&)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.403s]   317 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const Quaternion<OtherScalar, OtherOptions>& other)
+[2.403s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[2.404s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:317:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.404s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.404s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.404s]       |                                   [01;36m[K^~~~~[m[K
+[2.404s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.404s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.404s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:313:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options, class Derived> Quaternion(const Eigen::MatrixBase<OtherDerived>&)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.404s]   313 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const MatrixBase<Derived>& other) { *this = other; }
+[2.404s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[2.404s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:313:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.404s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.404s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.404s]       |                                   [01;36m[K^~~~~[m[K
+[2.404s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.404s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.404s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:306:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options> Quaternion(const typename Eigen::QuaternionBase<Eigen::Quaternion<Scalar, Options> >::AngleAxisType&)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.404s]   306 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const AngleAxisType& aa) { *this = aa; }
+[2.404s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[2.405s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:306:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.405s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.405s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.405s]       |                                   [01;36m[K^~~~~[m[K
+[2.405s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.405s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.405s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:303:65:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options, class Derived> Quaternion(const Eigen::QuaternionBase<Derived2>&)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.405s]   303 | class Derived> EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE [01;36m[KQuaternion[m[K(const QuaternionBase<Derived>& other) { this->Base::operator=(other); }
+[2.405s]       |                                                      [01;36m[K^~~~~~~~~~[m[K
+[2.405s] 
+[2.405s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:303:65:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.405s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.405s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.405s]       |                                   [01;36m[K^~~~~[m[K
+[2.405s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.405s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.405s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:300:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options> Quaternion(const _Scalar*)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.405s]   300 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const Scalar* data) : m_coeffs(data) {}
+[2.405s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[2.405s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:300:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.406s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.406s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.406s]       |                                   [01;36m[K^~~~~[m[K
+[2.406s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.406s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.406s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:297:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options> Quaternion(const _Scalar&, const _Scalar&, const _Scalar&, const _Scalar&)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.406s]   297 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K(const Scalar& w, const Scalar& x, const Scalar& y, const Scalar& z) : m_coeffs(x, y, z, w){}
+[2.406s]       |                            [01;36m[K^~~~~~~~~~[m[K
+[2.406s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:297:28:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.406s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+[2.406s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.406s]       |                                   [01;36m[K^~~~~[m[K
+[2.406s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Geometry:42[m[K,
+[2.406s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.406s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:288:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options> Quaternion()-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.406s]   288 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K() {}
+[2.406s]       |                            [01;36m[K^~~~~~~~~~[m[K
+[2.406s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:288:28:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.406s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Scalar[m[K’
+[2.406s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.406s]       |                                   [01;36m[K^~~~~[m[K
+[2.406s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+[2.406s]                  from [01m[K/usr/local/include/eigen3/Eigen/Geometry:11[m[K,
+[2.406s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.406s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:281:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Scalar, int _Options> Quaternion(const Eigen::Quaternion<_Scalar, _Options>&)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.406s]   281 |   [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Quaternion)
+[2.406s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.406s] [01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Quaternion.h:281:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.406s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.406s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.406s]       |                                   [01;36m[K^~~~~[m[K
+[2.407s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:163[m[K,
+[2.407s]                  from [01m[K/usr/local/include/eigen3/Eigen/Geometry:11[m[K,
+[2.407s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:9[m[K:
+[2.407s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:293:58:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Scalar, int Options> Quaternion(Eigen::Quaternion<Scalar, Options>)-> Eigen::Quaternion<Scalar, Options>[m[K’
+[2.407s]   293 | late<typename Scalar, int Options = AutoAlign> class [01;36m[KQuaternion[m[K;
+[2.407s]       |                                                      [01;36m[K^~~~~~~~~~[m[K
+[2.407s] 
+[2.407s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:293:58:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.407s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:136:35:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[2.407s]   136 |                 Eigen::Quaternion [01;36m[Kq_rot[m[K;
+[2.407s]       |                                   [01;36m[K^~~~~[m[K
+[2.413s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.414s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:266:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.414s]   266 |                                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[2.414s]       |                                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[2.415s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:284:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.415s]   284 |                                     for(int i = 0; [01;35m[Ki < imgPts.size()[m[K; i++){
+[2.415s]       |                                                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[2.415s] 
+[2.415s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:303:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.415s]   303 |                                     for(int i = 0; [01;35m[Ki < imgPts_rect.size()[m[K; i++){
+[2.415s]       |                                                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[2.415s] 
+[2.416s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:269:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance_real[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.416s]   269 |                                         double [01;35m[Kdistance_real[m[K = calculateDistanceToCamera(rvec[i], tvec[i], cv::Point3f(0, 0, 0));
+[2.416s]       |                                                [01;35m[K^~~~~~~~~~~~~[m[K
+[4.600s] gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+[4.600s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+[4.600s] gmake: *** [Makefile:146：all] 错误 2
+[4.601s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22

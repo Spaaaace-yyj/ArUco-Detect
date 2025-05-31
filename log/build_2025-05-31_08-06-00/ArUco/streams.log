@@ -1,0 +1,71 @@
+[0.009s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.020s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.085s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.107s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.109s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.113s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.121s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.130s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.153s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.154s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.236s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.274s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.296s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.298s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.300s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.360s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.362s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.362s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.364s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.403s] WARNING: Package name "ArUco" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.418s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.419s] -- Configured cppcheck include dirs: /home/spaaaaace/Code/ArUco/src/aruco/include/ArUco
+[0.419s] -- Configured cppcheck exclude dirs and/or files: 
+[0.419s] -- Added test 'lint_cmake' to check CMake code style
+[0.420s] -- Added test 'uncrustify' to check C / C++ code style
+[0.420s] -- Configured uncrustify additional arguments: 
+[0.420s] -- Added test 'xmllint' to check XML markup files
+[0.421s] -- Configuring done (0.4s)
+[0.430s] -- Generating done (0.0s)
+[0.431s] -- Build files have been written to: /home/spaaaaace/Code/ArUco/build/ArUco
+[0.452s] [ 50%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[2.405s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&)[m[K’:
+[2.405s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:27:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.405s]    27 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.405s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.406s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:31:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.406s]    31 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+[2.406s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.407s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[2.407s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:56:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.407s]    56 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.407s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.469s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.469s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:149:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.469s]   149 |                                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[2.469s]       |                                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[6.348s] [100%] [32m[1mLinking CXX executable ArUco[0m
+[6.542s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[6.543s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[6.884s] [100%] Built target ArUco
+[6.892s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[6.915s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco
+[6.919s] -- Install configuration: ""
+[6.919s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco
+[6.923s] -- Set runtime path of "/home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco" to ""
+[6.923s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/package_run_dependencies/ArUco
+[6.923s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/parent_prefix_path/ArUco
+[6.923s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.sh
+[6.923s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.dsv
+[6.923s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.sh
+[6.923s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.dsv
+[6.923s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.bash
+[6.924s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.sh
+[6.924s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.zsh
+[6.924s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.dsv
+[6.924s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.dsv
+[6.924s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/packages/ArUco
+[6.924s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig.cmake
+[6.924s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig-version.cmake
+[6.924s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.xml
+[6.925s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco

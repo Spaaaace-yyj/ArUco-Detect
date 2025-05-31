@@ -1,0 +1,17 @@
+[0.011s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.038s] [ 50%] [32m[1mLinking CXX executable ArUco[0m
+[0.194s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[0.194s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[0.491s] /usr/bin/ld: CMakeFiles/ArUco.dir/src/ArUco.cpp.o: in function `ArucoDetect::ArucoDetect()':
+[0.492s] ArUco.cpp:(.text._ZN11ArucoDetectC2Ev[_ZN11ArucoDetectC5Ev]+0x3d0): undefined reference to `EKF::EKF()'
+[0.492s] /usr/bin/ld: CMakeFiles/ArUco.dir/src/ArUco.cpp.o: in function `ArucoDetect::imageCallback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+[0.492s] ArUco.cpp:(.text._ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x95e): undefined reference to `EKF::init(double, double, int, int)'
+[0.493s] /usr/bin/ld: ArUco.cpp:(.text._ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x9a5): undefined reference to `EKF::update_EKF(cv::Mat&, double)'
+[0.493s] /usr/bin/ld: ArUco.cpp:(.text._ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x9c5): undefined reference to `EKF::get_pre()'
+[0.494s] /usr/bin/ld: ArUco.cpp:(.text._ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0xa06): undefined reference to `EKF::get_future_mat(double)'
+[0.494s] /usr/bin/ld: ArUco.cpp:(.text._ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN11ArucoDetect13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0xa3d): undefined reference to `EKF::get_future_point(double)'
+[0.543s] collect2: error: ld returned 1 exit status
+[0.543s] gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:221：ArUco] 错误 1
+[0.544s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+[0.544s] gmake: *** [Makefile:146：all] 错误 2
+[0.546s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22

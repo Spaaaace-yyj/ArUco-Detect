@@ -936,6 +936,22 @@ CMakeFiles/ArUco.dir/src/ArUco.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__builder.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__traits.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp \
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
@@ -949,4 +965,6 @@ CMakeFiles/ArUco.dir/src/ArUco.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp
+ /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
+ /home/spaaaaace/Code/ArUco/src/aruco/include/ArUco/kalman.hpp \
+ /usr/local/include/opencv4/opencv2/opencv.hpp

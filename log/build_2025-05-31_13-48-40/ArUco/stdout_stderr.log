@@ -1,0 +1,29 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:27:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   27 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:31:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   31 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:56:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   56 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:140:41:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K<unresolved overloaded function type>[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator-[m[K’
+  140 |                         float dt = ([01;31m[Kend - start[m[K) * 1000.0 / cv::getTickFrequency();
+      |                                     [01;31m[K~~~~^~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:186:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  186 |                              for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+      |                                              [01;35m[K~~^~~~~~~~~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:188:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  188 |                                         double [01;35m[Kdistance[m[K = calculateDistanceToCamera(rvec[i], tvec[i], cv::Point3f(0, 0, 0));
+      |                                                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:249:37:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kend[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  249 |                                 int [01;35m[Kend[m[K = cv::getTickCount();
+      |                                     [01;35m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

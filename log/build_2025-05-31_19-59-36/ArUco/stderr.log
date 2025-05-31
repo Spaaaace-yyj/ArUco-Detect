@@ -1,0 +1,9 @@
+WARNING: Package name "ArUco" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+/usr/bin/ld: CMakeFiles/ArUco.dir/src/ArUco.cpp.o: in function `ArucoDetect::ArucoDetect()':
+ArUco.cpp:(.text._ZN11ArucoDetectC2Ev[_ZN11ArucoDetectC5Ev]+0x3d0): undefined reference to `EKF::EKF()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:237：ArUco] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

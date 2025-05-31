@@ -16,6 +16,9 @@ find_package(tf2_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(visualization_msgs REQUIRED)
+
+include_directories(include/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -29,8 +32,8 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(ArUco src/ArUco.cpp)
-ament_target_dependencies(ArUco rclcpp OpenCV sensor_msgs cv_bridge tf2 tf2_ros geometry_msgs tf2_geometry_msgs)
+add_executable(ArUco src/ArUco.cpp src/kalman.cpp)
+ament_target_dependencies(ArUco rclcpp OpenCV sensor_msgs cv_bridge tf2 tf2_ros geometry_msgs tf2_geometry_msgs visualization_msgs)
 
 install(TARGETS
   ArUco

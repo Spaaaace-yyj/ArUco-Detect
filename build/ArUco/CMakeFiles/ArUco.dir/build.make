@@ -83,17 +83,39 @@ CMakeFiles/ArUco.dir/src/ArUco.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArUco.dir/src/ArUco.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp -o CMakeFiles/ArUco.dir/src/ArUco.cpp.s
 
+CMakeFiles/ArUco.dir/src/kalman.cpp.o: CMakeFiles/ArUco.dir/flags.make
+CMakeFiles/ArUco.dir/src/kalman.cpp.o: /home/spaaaaace/Code/ArUco/src/aruco/src/kalman.cpp
+CMakeFiles/ArUco.dir/src/kalman.cpp.o: CMakeFiles/ArUco.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ArUco.dir/src/kalman.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ArUco.dir/src/kalman.cpp.o -MF CMakeFiles/ArUco.dir/src/kalman.cpp.o.d -o CMakeFiles/ArUco.dir/src/kalman.cpp.o -c /home/spaaaaace/Code/ArUco/src/aruco/src/kalman.cpp
+
+CMakeFiles/ArUco.dir/src/kalman.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ArUco.dir/src/kalman.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spaaaaace/Code/ArUco/src/aruco/src/kalman.cpp > CMakeFiles/ArUco.dir/src/kalman.cpp.i
+
+CMakeFiles/ArUco.dir/src/kalman.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArUco.dir/src/kalman.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spaaaaace/Code/ArUco/src/aruco/src/kalman.cpp -o CMakeFiles/ArUco.dir/src/kalman.cpp.s
+
 # Object files for target ArUco
 ArUco_OBJECTS = \
-"CMakeFiles/ArUco.dir/src/ArUco.cpp.o"
+"CMakeFiles/ArUco.dir/src/ArUco.cpp.o" \
+"CMakeFiles/ArUco.dir/src/kalman.cpp.o"
 
 # External object files for target ArUco
 ArUco_EXTERNAL_OBJECTS =
 
 ArUco: CMakeFiles/ArUco.dir/src/ArUco.cpp.o
+ArUco: CMakeFiles/ArUco.dir/src/kalman.cpp.o
 ArUco: CMakeFiles/ArUco.dir/build.make
 ArUco: /opt/ros/humble/lib/libcv_bridge.so
 ArUco: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_c.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_introspection_c.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_introspection_cpp.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_cpp.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_py.so
 ArUco: /usr/local/lib/libopencv_highgui.so.4.10.0
 ArUco: /usr/local/lib/libopencv_ml.so.4.10.0
 ArUco: /usr/local/lib/libopencv_objdetect.so.4.10.0
@@ -101,14 +123,6 @@ ArUco: /usr/local/lib/libopencv_photo.so.4.10.0
 ArUco: /usr/local/lib/libopencv_stitching.so.4.10.0
 ArUco: /usr/local/lib/libopencv_video.so.4.10.0
 ArUco: /usr/local/lib/libopencv_videoio.so.4.10.0
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
-ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 ArUco: /opt/ros/humble/lib/libtf2_ros.so
 ArUco: /opt/ros/humble/lib/libtf2.so
 ArUco: /opt/ros/humble/lib/libmessage_filters.so
@@ -172,30 +186,41 @@ ArUco: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 ArUco: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 ArUco: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 ArUco: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
+ArUco: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 ArUco: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 ArUco: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 ArUco: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
-ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-ArUco: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-ArUco: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 ArUco: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 ArUco: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 ArUco: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 ArUco: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 ArUco: /opt/ros/humble/lib/librmw.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+ArUco: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+ArUco: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 ArUco: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 ArUco: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 ArUco: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 ArUco: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 ArUco: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 ArUco: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 ArUco: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_c.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+ArUco: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_c.so
+ArUco: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 ArUco: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 ArUco: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 ArUco: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
@@ -208,7 +233,6 @@ ArUco: /opt/ros/humble/lib/librcpputils.so
 ArUco: /opt/ros/humble/lib/librosidl_runtime_c.so
 ArUco: /opt/ros/humble/lib/librcutils.so
 ArUco: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-ArUco: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
 ArUco: /usr/local/lib/libopencv_imgcodecs.so.4.10.0
 ArUco: /usr/local/lib/libopencv_calib3d.so.4.10.0
 ArUco: /usr/local/lib/libopencv_dnn.so.4.10.0
@@ -217,7 +241,7 @@ ArUco: /usr/local/lib/libopencv_flann.so.4.10.0
 ArUco: /usr/local/lib/libopencv_imgproc.so.4.10.0
 ArUco: /usr/local/lib/libopencv_core.so.4.10.0
 ArUco: CMakeFiles/ArUco.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ArUco"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/spaaaaace/Code/ArUco/build/ArUco/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ArUco"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ArUco.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

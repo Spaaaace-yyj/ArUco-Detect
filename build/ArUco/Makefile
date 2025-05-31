@@ -234,6 +234,30 @@ src/ArUco.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/ArUco.cpp.s
 .PHONY : src/ArUco.cpp.s
 
+src/kalman.o: src/kalman.cpp.o
+.PHONY : src/kalman.o
+
+# target to build an object file
+src/kalman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/kalman.cpp.o
+.PHONY : src/kalman.cpp.o
+
+src/kalman.i: src/kalman.cpp.i
+.PHONY : src/kalman.i
+
+# target to preprocess a source file
+src/kalman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/kalman.cpp.i
+.PHONY : src/kalman.cpp.i
+
+src/kalman.s: src/kalman.cpp.s
+.PHONY : src/kalman.s
+
+# target to generate assembly for a file
+src/kalman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/kalman.cpp.s
+.PHONY : src/kalman.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... src/ArUco.o"
 	@echo "... src/ArUco.i"
 	@echo "... src/ArUco.s"
+	@echo "... src/kalman.o"
+	@echo "... src/kalman.i"
+	@echo "... src/kalman.s"
 .PHONY : help
 
 

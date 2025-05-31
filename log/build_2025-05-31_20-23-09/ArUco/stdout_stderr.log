@@ -1,0 +1,47 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&, bool)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:27:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   27 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:31:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   31 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:61:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   61 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In constructor ‘[01m[KArucoDetect::ArucoDetect()[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:81:70:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[K;[m[K’ token
+   81 |               ekf = new(EKF(alpha_q, alpha_r, stateSize, measSize))[01;31m[K;[m[K
+      |                                                                    [01;31m[K^[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:225:25:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  225 |                         [01;35m[Kfor[m[K (int i = 0; i < measSize; ++i)
+      |                         [01;35m[K^~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:228:33:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+  228 |                                 [01;36m[Kfor[m[K (int i = 0; i < rvec.size(); i++) {
+      |                                 [01;36m[K^~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:228:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  228 |                                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+      |                                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:264:44:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[KEKF[m[K’
+  264 |                                         ekf[01;31m[K->[m[Kupdate(tvec[i], dt);
+      |                                            [01;31m[K^~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:266:67:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[KEKF[m[K’
+  266 |                                cv::Point3f position = ekf[01;31m[K->[m[KgetCurrentPosition();
+      |                                                          [01;31m[K^~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:267:65:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[KEKF[m[K’
+  267 |                                  cv::Point3f future = ekf[01;31m[K->[m[KpredictFuturePosition(extrapolate_dt, 0.6);
+      |                                                          [01;31m[K^~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:278:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  278 |                                         for(int i = 0; [01;35m[Ki < imgPts.size()[m[K; i++){
+      |                                                        [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:297:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  297 |                                         for(int i = 0; [01;35m[Ki < imgPts_rect.size()[m[K; i++){
+      |                                                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,52 @@
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&, bool)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:29:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   29 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:33:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   33 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:63:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   63 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker ArucoDetect::makeMarker(const Pose&, const string&, const string&, cv::Scalar)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:93:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kframe_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   93 |                         [01;35m[Kconst std::string &frame_id = "camera"[m[K,
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:94:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kchild_frame_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   94 |                         [01;35m[Kconst std::string &child_frame_id = "Aruco"[m[K,
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:269:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  269 |                                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+      |                                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:287:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  287 |                                     for(int i = 0; [01;35m[Ki < imgPts.size()[m[K; i++){
+      |                                                    [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:306:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  306 |                                     for(int i = 0; [01;35m[Ki < imgPts_rect.size()[m[K; i++){
+      |                                                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:315:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass EKF[m[K’ has no member named ‘[01m[KgetFuturePosition_Mat[m[K’; did you mean ‘[01m[KgetCurrentPosition_Mat[m[K’?
+  315 |                       cv::Mat tvec_ekf_future = ekf->[01;31m[KgetFuturePosition_Mat[m[K();
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                      [32m[KgetCurrentPosition_Mat[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:318:73:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kvisualization_msgs::msg::Marker marker[m[K’
+  318 |                      visualization_msgs::msg::Marker [01;31m[Kmarker[m[K = makeMarker(pose_future);
+      |                                                      [01;31m[K^~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:313:73:[m[K [01;36m[Knote: [m[K‘[01m[Kvisualization_msgs::msg::Marker marker[m[K’ previously declared here
+  313 |                      visualization_msgs::msg::Marker [01;36m[Kmarker[m[K = makeMarker(pose);
+      |                                                      [01;36m[K^~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:321:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_future[m[K’ was not declared in this scope; did you mean ‘[01m[Kmarker_pub_[m[K’?
+  321 |                          marker_pub_future_->publish([01;31m[Kmarker_future[m[K);
+      |                                                      [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                      [32m[Kmarker_pub_[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:272:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance_real[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  272 |                                         double [01;35m[Kdistance_real[m[K = calculateDistanceToCamera(rvec[i], tvec[i], cv::Point3f(0, 0, 0));
+      |                                                [01;35m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

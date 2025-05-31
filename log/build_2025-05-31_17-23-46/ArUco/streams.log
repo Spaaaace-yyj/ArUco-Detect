@@ -1,0 +1,22 @@
+[0.009s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.038s] [100%] Built target ArUco
+[0.042s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.059s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco
+[0.060s] -- Install configuration: ""
+[0.060s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/package_run_dependencies/ArUco
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/parent_prefix_path/ArUco
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.sh
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.dsv
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.sh
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.dsv
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.bash
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.sh
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.zsh
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.dsv
+[0.061s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.dsv
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/packages/ArUco
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig.cmake
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig-version.cmake
+[0.061s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.xml
+[0.062s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco

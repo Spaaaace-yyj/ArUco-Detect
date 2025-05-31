@@ -1,0 +1,62 @@
+[0.010s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.038s] [ 50%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[2.259s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&)[m[K’:
+[2.259s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:27:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.260s]    27 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.260s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.261s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:31:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.261s]    31 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+[2.261s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.262s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[2.262s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:56:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.263s]    56 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.263s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.341s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.341s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:179:25:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.341s]   179 |                         [01;35m[Kfor[m[K (int i = 0; i < measSize; ++i)
+[2.341s]       |                         [01;35m[K^~~[m[K
+[2.341s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:182:33:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+[2.341s]   182 |                                 [01;36m[Kfor[m[K (int i = 0; i < rvec.size(); i++) {
+[2.341s]       |                                 [01;36m[K^~~[m[K
+[2.341s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:182:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.341s]   182 |                              for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[2.341s]       |                                              [01;35m[K~~^~~~~~~~~~~~~[m[K
+[2.341s] 
+[2.344s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:226:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.344s]   226 |                               for(int i = 0; [01;35m[Ki < imgPts.size()[m[K; i++){
+[2.344s]       |                                              [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[2.344s] 
+[2.363s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:184:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.363s]   184 |                                         double [01;35m[Kdistance[m[K = calculateDistanceToCamera(rvec[i], tvec[i], cv::Point3f(0, 0, 0));
+[2.364s]       |                                                [01;35m[K^~~~~~~~[m[K
+[2.364s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:140:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstart[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.364s]   140 |                         int [01;35m[Kstart[m[K = cv::getTickCount();
+[2.364s]       |                             [01;35m[K^~~~~[m[K
+[2.364s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:279:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kend[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.364s]   279 |                         int [01;35m[Kend[m[K = cv::getTickCount();
+[2.364s]       |                             [01;35m[K^~~[m[K
+[6.702s] [100%] [32m[1mLinking CXX executable ArUco[0m
+[6.851s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[6.851s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[7.206s] [100%] Built target ArUco
+[7.214s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[7.236s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco
+[7.238s] -- Install configuration: ""
+[7.238s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco
+[7.241s] -- Set runtime path of "/home/spaaaaace/Code/ArUco/install/ArUco/lib/ArUco/ArUco" to ""
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/package_run_dependencies/ArUco
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/parent_prefix_path/ArUco
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.sh
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/ament_prefix_path.dsv
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.sh
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/environment/path.dsv
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.bash
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.sh
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.zsh
+[7.241s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/local_setup.dsv
+[7.242s] -- Installing: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.dsv
+[7.242s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ament_index/resource_index/packages/ArUco
+[7.242s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig.cmake
+[7.242s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/cmake/ArUcoConfig-version.cmake
+[7.242s] -- Up-to-date: /home/spaaaaace/Code/ArUco/install/ArUco/share/ArUco/package.xml
+[7.243s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/spaaaaace/Code/ArUco/build/ArUco

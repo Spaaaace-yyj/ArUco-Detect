@@ -1,0 +1,130 @@
+[0.010s] Invoking command in '/home/spaaaaace/Code/ArUco/build/ArUco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22
+[0.022s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.087s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.108s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.110s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.114s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.120s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.129s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.152s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.153s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.236s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.286s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.319s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.320s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.323s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.384s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.386s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.387s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.397s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.418s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.460s] WARNING: Package name "ArUco" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.473s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.473s] -- Configured cppcheck include dirs: /home/spaaaaace/Code/ArUco/src/aruco/include/ArUco
+[0.473s] -- Configured cppcheck exclude dirs and/or files: 
+[0.473s] -- Added test 'lint_cmake' to check CMake code style
+[0.473s] -- Added test 'uncrustify' to check C / C++ code style
+[0.473s] -- Configured uncrustify additional arguments: 
+[0.473s] -- Added test 'xmllint' to check XML markup files
+[0.474s] -- Configuring done (0.5s)
+[0.482s] -- Generating done (0.0s)
+[0.483s] -- Build files have been written to: /home/spaaaaace/Code/ArUco/build/ArUco
+[0.512s] [ 33%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/ArUco.cpp.o[0m
+[0.513s] [ 66%] [32mBuilding CXX object CMakeFiles/ArUco.dir/src/kalman.cpp.o[0m
+[2.741s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&, bool)[m[K’:
+[2.741s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:29:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.741s]    29 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.741s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.742s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:33:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.742s]    33 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+[2.742s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.744s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[2.744s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:63:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.744s]    63 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+[2.744s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.806s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker ArucoDetect::makeMarker(const Pose&)[m[K’:
+[2.806s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:110:45:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Duration::Duration(int)[m[K’
+[2.807s]   110 |         marker.lifetime = rclcpp::Duration(0[01;31m[K)[m[K; // 永久显示
+[2.807s]       |                                             [01;31m[K^[m[K
+[2.807s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.807s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.807s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:1[m[K:
+[2.807s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:48:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Rep, class Period> rclcpp::Duration::Duration(const std::chrono::duration<_Rep1, _Period1>&)[m[K’
+[2.808s]    48 |   [01;36m[KDuration[m[K(const std::chrono::duration<Rep, Period> & duration)  // NOLINT(runtime/explicit)
+[2.808s]       |   [01;36m[K^~~~~~~~[m[K
+[2.808s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:48:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.808s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:110:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint[m[K’
+[2.808s]   110 |         marker.lifetime = rclcpp::Duration(0[01;36m[K)[m[K; // 永久显示
+[2.808s]       |                                             [01;36m[K^[m[K
+[2.808s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.808s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.809s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.809s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.809s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.809s]                  from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:1[m[K:
+[2.809s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:151:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Duration::Duration()[m[K’
+[2.809s]   151 |   [01;36m[KDuration[m[K() = default;
+[2.809s]       |   [01;36m[K^~~~~~~~[m[K
+[2.809s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:151:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.809s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:61:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Duration::Duration(const rclcpp::Duration&)[m[K’
+[2.809s]    61 |   [01;36m[KDuration[m[K(const Duration & rhs);
+[2.809s]       |   [01;36m[K^~~~~~~~[m[K
+[2.809s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:61:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst rclcpp::Duration&[m[K’
+[2.809s]    61 |   Duration([01;36m[Kconst Duration & rhs[m[K);
+[2.809s]       |            [01;36m[K~~~~~~~~~~~~~~~~~^~~[m[K
+[2.809s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:59:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Duration::Duration(const rcl_duration_t&)[m[K’
+[2.809s]    59 |   explicit [01;36m[KDuration[m[K(const rcl_duration_t & duration);
+[2.809s]       |            [01;36m[K^~~~~~~~[m[K
+[2.809s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:59:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst rcl_duration_t&[m[K’ {aka ‘[01m[Kconst rcl_duration_s&[m[K’}
+[2.809s]    59 |   explicit Duration([01;36m[Kconst rcl_duration_t & duration[m[K);
+[2.809s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.809s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:53:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Duration::Duration(const Duration&)[m[K’
+[2.809s]    53 |   [01;36m[KDuration[m[K(const builtin_interfaces::msg::Duration & duration_msg);  // NOLINT(runtime/explicit)
+[2.809s]       |   [01;36m[K^~~~~~~~[m[K
+[2.810s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:53:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst Duration&[m[K’ {aka ‘[01m[Kconst builtin_interfaces::msg::Duration_<std::allocator<void> >&[m[K’}
+[2.810s]    53 |   Duration([01;36m[Kconst builtin_interfaces::msg::Duration & duration_msg[m[K);  // NOLINT(runtime/explicit)
+[2.810s]       |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[2.810s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:42:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Duration::Duration(std::chrono::nanoseconds)[m[K’
+[2.810s]    42 |   explicit [01;36m[KDuration[m[K(std::chrono::nanoseconds nanoseconds);
+[2.810s]       |            [01;36m[K^~~~~~~~[m[K
+[2.810s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:42:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd::chrono::nanoseconds[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000000000> >[m[K’}
+[2.810s]    42 |   explicit Duration([01;36m[Kstd::chrono::nanoseconds nanoseconds[m[K);
+[2.810s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[2.810s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:39:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Duration::Duration(int32_t, uint32_t)[m[K’
+[2.810s]    39 |   [01;36m[KDuration[m[K(int32_t seconds, uint32_t nanoseconds);
+[2.810s]       |   [01;36m[K^~~~~~~~[m[K
+[2.810s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:39:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.835s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.836s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:253:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.836s]   253 |                                 for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+[2.836s]       |                                                 [01;35m[K~~^~~~~~~~~~~~~[m[K
+[2.836s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:271:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.837s]   271 |                                         for(int i = 0; [01;35m[Ki < imgPts.size()[m[K; i++){
+[2.837s]       |                                                        [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[2.837s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:290:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.837s]   290 |                                         for(int i = 0; [01;35m[Ki < imgPts_rect.size()[m[K; i++){
+[2.838s]       |                                                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[2.840s] [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:256:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance_real[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.840s]   256 |                                         double [01;35m[Kdistance_real[m[K = calculateDistanceToCamera(rvec[i], tvec[i], cv::Point3f(0, 0, 0));
+[2.841s]       |                                                [01;35m[K^~~~~~~~~~~~~[m[K
+[4.972s] gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+[4.973s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+[4.973s] gmake: *** [Makefile:146：all] 错误 2
+[4.975s] Invoked command in '/home/spaaaaace/Code/ArUco/build/ArUco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/spaaaaace/Code/ArUco/build/ArUco -- -j22 -l22

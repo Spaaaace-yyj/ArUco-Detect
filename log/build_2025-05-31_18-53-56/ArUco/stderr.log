@@ -1,0 +1,35 @@
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kvoid draw_aruco_target(std::vector<int>, std::vector<std::vector<cv::Point_<float> > >, cv::Mat&, bool)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:27:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   27 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:31:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   31 |                 for (int j = 0; [01;35m[Kj < markerCorners[i].size()[m[K; j++) {
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In function ‘[01m[Kbool solve_pnp(cv::Mat, cv::Mat, std::vector<cv::Point3_<float> >, const std::vector<std::vector<cv::Point_<float> > >&, std::vector<cv::Mat>&, std::vector<cv::Mat>&)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:61:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<cv::Point_<float> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   61 |         for (int i = 0; [01;35m[Ki < markerCorners.size()[m[K; i++) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetect::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:228:25:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  228 |                         [01;35m[Kfor[m[K (int i = 0; i < measSize; ++i)
+      |                         [01;35m[K^~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:231:33:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+  231 |                                 [01;36m[Kfor[m[K (int i = 0; i < rvec.size(); i++) {
+      |                                 [01;36m[K^~~[m[K
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:231:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Mat>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  231 |                              for (int i = 0; [01;35m[Ki < rvec.size()[m[K; i++) {
+      |                                              [01;35m[K~~^~~~~~~~~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:277:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  277 |                               for(int i = 0; [01;35m[Ki < imgPts.size()[m[K; i++){
+      |                                              [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:295:58:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  295 |                               for(int i = 0; [01;35m[Ki < imgPts_rect.size()[m[K; i++){
+      |                                              [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:266:48:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance_pre[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  266 |                                         double [01;35m[Kdistance_pre[m[K = calculateDistanceToCamera(rvec[i], x_future, cv::Point3f(0, 0, 0));
+      |                                                [01;35m[K^~~~~~~~~~~~[m[K
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
