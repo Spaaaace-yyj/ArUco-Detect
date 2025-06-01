@@ -1,8 +1,0 @@
-source;share/ArUco/hook/cmake_prefix_path.ps1
-source;share/ArUco/hook/cmake_prefix_path.dsv
-source;share/ArUco/hook/cmake_prefix_path.sh
-source;share/ArUco/local_setup.bash
-source;share/ArUco/local_setup.dsv
-source;share/ArUco/local_setup.ps1
-source;share/ArUco/local_setup.sh
-source;share/ArUco/local_setup.zsh
