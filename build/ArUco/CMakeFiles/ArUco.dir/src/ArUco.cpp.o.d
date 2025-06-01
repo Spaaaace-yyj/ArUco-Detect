@@ -967,4 +967,5 @@ CMakeFiles/ArUco.dir/src/ArUco.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
  /home/spaaaaace/Code/ArUco/src/aruco/include/ArUco/kalman.hpp \
- /usr/local/include/opencv4/opencv2/opencv.hpp
+ /usr/local/include/opencv4/opencv2/opencv.hpp \
+ /home/spaaaaace/Code/ArUco/src/aruco/include/ArUco/aruco_mark.hpp

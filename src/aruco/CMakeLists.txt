@@ -5,6 +5,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+set(CMAKE_BUILD_TYPE Debug)
+
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -32,7 +35,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(ArUco src/ArUco.cpp src/kalman.cpp)
+add_executable(ArUco src/ArUco.cpp src/kalman.cpp src/aruco_mark.cpp)
 ament_target_dependencies(ArUco rclcpp OpenCV sensor_msgs cv_bridge tf2 tf2_ros geometry_msgs tf2_geometry_msgs visualization_msgs)
 
 install(TARGETS

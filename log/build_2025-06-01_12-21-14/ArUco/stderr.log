@@ -1,0 +1,16 @@
+WARNING: Package name "ArUco" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+In file included from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/aruco_mark.cpp:1[m[K:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/include/ArUco/aruco_mark.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kopencv4/opencv2.hpp: 没有那个文件或目录
+    4 | #include [01;31m[K<opencv4/opencv2.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:104：CMakeFiles/ArUco.dir/src/aruco_mark.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/spaaaaace/Code/ArUco/src/aruco/src/ArUco.cpp:18[m[K:
+[01m[K/home/spaaaaace/Code/ArUco/src/aruco/include/ArUco/aruco_mark.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kopencv4/opencv2.hpp: 没有那个文件或目录
+    4 | #include [01;31m[K<opencv4/opencv2.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ArUco.dir/build.make:76：CMakeFiles/ArUco.dir/src/ArUco.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ArUco.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

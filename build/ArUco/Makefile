@@ -234,6 +234,30 @@ src/ArUco.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/ArUco.cpp.s
 .PHONY : src/ArUco.cpp.s
 
+src/aruco_mark.o: src/aruco_mark.cpp.o
+.PHONY : src/aruco_mark.o
+
+# target to build an object file
+src/aruco_mark.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/aruco_mark.cpp.o
+.PHONY : src/aruco_mark.cpp.o
+
+src/aruco_mark.i: src/aruco_mark.cpp.i
+.PHONY : src/aruco_mark.i
+
+# target to preprocess a source file
+src/aruco_mark.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/aruco_mark.cpp.i
+.PHONY : src/aruco_mark.cpp.i
+
+src/aruco_mark.s: src/aruco_mark.cpp.s
+.PHONY : src/aruco_mark.s
+
+# target to generate assembly for a file
+src/aruco_mark.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ArUco.dir/build.make CMakeFiles/ArUco.dir/src/aruco_mark.cpp.s
+.PHONY : src/aruco_mark.cpp.s
+
 src/kalman.o: src/kalman.cpp.o
 .PHONY : src/kalman.o
 
@@ -277,6 +301,9 @@ help:
 	@echo "... src/ArUco.o"
 	@echo "... src/ArUco.i"
 	@echo "... src/ArUco.s"
+	@echo "... src/aruco_mark.o"
+	@echo "... src/aruco_mark.i"
+	@echo "... src/aruco_mark.s"
 	@echo "... src/kalman.o"
 	@echo "... src/kalman.i"
 	@echo "... src/kalman.s"

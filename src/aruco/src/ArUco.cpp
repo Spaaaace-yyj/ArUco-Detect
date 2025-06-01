@@ -15,6 +15,7 @@
 #include <tf2/LinearMath/Quaternion.h>
 
 #include "kalman.hpp"
+#include "aruco_mark.hpp"
 
 using namespace std;
 
@@ -25,53 +26,6 @@ using namespace std;
 
 
 
-void draw_aruco_target(std::vector<int> markerIds, std::vector<std::vector<cv::Point2f> > markerCorners, cv::Mat &dst, bool use_diff_color = false) {
-	for (int i = 0; i < markerCorners.size(); i++) {
-		//cv::line(dst, markerCorners[i][0], markerCorners[i][1], Line_Color_X, 3, 8, 0);
-		//cv::line(dst, markerCorners[i][0], markerCorners[i][3], Line_Color_Y, 3, 8, 0);
-		cv::putText(dst, "ArUco" + to_string(markerIds[i]), markerCorners[i][0], cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 1, 8);
-		for (int j = 0; j < markerCorners[i].size(); j++) {
-			if(!use_diff_color){
-				cv::line(dst, markerCorners[i][j], markerCorners[i][(j + 1) % 4], cv::Scalar(0, 0, 255), 1, 8, 0);
-			}else{
-				switch (j)
-				{
-				case 0:
-					cv::circle(dst, markerCorners[i][j], 6, P1_Color, 2);
-					break;
-				case 1:
-					cv::circle(dst, markerCorners[i][j], 2, P2_Color, 3);
-					break;
-				case 2:
-					cv::circle(dst, markerCorners[i][j], 2, P3_Color, 3);
-					break;
-				case 3:
-					cv::circle(dst, markerCorners[i][j], 2, P4_Color, 3);
-					break;
-				default:
-					break;
-				}
-			}
-			
-		}
-	}
-};
-
-bool solve_pnp(cv::Mat cameraMatrix, cv::Mat distCoeffs, vector<cv::Point3f> objectPoints,
-					const vector<std::vector<cv::Point2f> > &markerCorners,
-					vector <cv::Mat> &rvec, vector <cv::Mat> &tvec) {
-	for (int i = 0; i < markerCorners.size(); i++) {
-		cv::Mat rvec_temp, tvec_temp;
-		bool can_solve = cv::solvePnP(objectPoints, markerCorners[i], cameraMatrix, distCoeffs, rvec_temp, tvec_temp, false, cv::SOLVEPNP_IPPE_SQUARE);
-		if (!can_solve) {
-			cout << "Solve PnP faile at ID = " << i << endl;
-			return false;
-		}
-		rvec.push_back(rvec_temp);
-		tvec.push_back(tvec_temp);
-	}
-	return true;
-}
 class ArucoDetect : public rclcpp::Node
 {
 public:
@@ -82,12 +36,91 @@ public:
 
 		marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("/aruco_truePos", 10);
 		marker_pub_future_ = this->create_publisher<visualization_msgs::msg::Marker>("/aruco_futurePos", 10);
-
-		ekf =new EKF(alpha_q, alpha_r, stateSize, measSize);
-
-		
 	}
 
+	void draw_aruco_target(std::vector<int> markerIds, std::vector<std::vector<cv::Point2f> > markerCorners, cv::Mat &dst, bool use_diff_color = false) {
+		for (size_t i = 0; i < markerCorners.size(); i++) {
+			//cv::line(dst, markerCorners[i][0], markerCorners[i][1], Line_Color_X, 3, 8, 0);
+			//cv::line(dst, markerCorners[i][0], markerCorners[i][3], Line_Color_Y, 3, 8, 0);
+			//cv::putText(dst, "ArUco" + to_string(markerIds[i]), markerCorners[i][0], cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 1, 8);
+			for (size_t j = 0; j < markerCorners[i].size(); j++) {
+				if(!use_diff_color){
+					cv::line(dst, markerCorners[i][j], markerCorners[i][(j + 1) % 4], cv::Scalar(0, 0, 255), 1, 8, 0);
+				}else{
+					switch (j)
+					{
+					case 0:
+						cv::circle(dst, markerCorners[i][j], 6, P1_Color, 2);
+						break;
+					case 1:
+						cv::circle(dst, markerCorners[i][j], 2, P2_Color, 3);
+						break;
+					case 2:
+						cv::circle(dst, markerCorners[i][j], 2, P3_Color, 3);
+						break;
+					case 3:
+						cv::circle(dst, markerCorners[i][j], 2, P4_Color, 3);
+						break;
+					default:
+						break;
+					}
+				}
+
+			}
+		}
+	}
+
+	bool solve_pnp(cv::Mat cameraMatrix, cv::Mat distCoeffs, vector<cv::Point3f> objectPoints,
+						const vector<std::vector<cv::Point2f> > &markerCorners,
+						vector<int> markerIds, vector<ArucoMark> &aruco_marks) {
+		for (size_t i = 0; i < markerCorners.size(); i++) {
+			bool is_new = true;
+			cv::Mat rvec_temp, tvec_temp;
+			bool can_solve = cv::solvePnP(objectPoints, markerCorners[i], cameraMatrix, distCoeffs, rvec_temp, tvec_temp, false, cv::SOLVEPNP_IPPE_SQUARE);
+			
+			if (!can_solve) {
+				cout << "Solve PnP faile at ID = " << i << endl;
+				return false;
+			}
+
+			if(aruco_marks.size() == 0){
+				aruco_marks.push_back(ArucoMark(markerIds[i], markerCorners[i], rvec_temp, tvec_temp));
+				continue;
+			}else{
+				for(size_t j = 0; j < aruco_marks.size(); j++){
+					if(is_new == false){
+						break;
+					}
+					if(markerIds[i] == aruco_marks[j].id){
+						is_new = false;
+						aruco_marks[j].isLost = false;
+						aruco_marks[j].markerCorners = markerCorners[i];
+						aruco_marks[j].marker_rvec = rvec_temp;
+						aruco_marks[j].marker_tvec = tvec_temp;
+						break;
+					}
+				}
+				if(is_new){
+					aruco_marks.push_back(ArucoMark(markerIds[i], markerCorners[i], rvec_temp, tvec_temp));
+				}
+			}
+		}
+		for(size_t i = 0; i < aruco_marks.size(); i++){
+			if(markerIds.size() == 0){
+				aruco_marks[i].isLost = true;
+				continue;
+			}
+			for(size_t j = 0; j < markerIds.size(); j++){
+				if(markerIds[j] == aruco_marks[i].id){
+					break;
+				}
+				if(j == markerIds.size() - 1){
+					aruco_marks[i].isLost = true;
+				}
+			}
+		}
+		return true;
+	}
 	visualization_msgs::msg::Marker makeMarker(
 			const geometry_msgs::msg::Pose &pose, 
 			const std::string &frame_id = "camera", 
@@ -217,7 +250,7 @@ public:
 
     				
     		broadcaster_->sendTransform(transform_stamped);
-		}
+	}
 
 	void imageCallback(const sensor_msgs::msg::Image::SharedPtr msg)
      {
@@ -264,66 +297,33 @@ public:
 				//result matrix
 				vector <cv::Mat> rvec, tvec;
 
-				solve_pnp(cameraMatrix, distCoeffs, objectPoints, markerCorners, rvec, tvec);
+				solve_pnp(cameraMatrix, distCoeffs, objectPoints, markerCorners, markerIds, aruco_marks);
 				
-				for (int i = 0; i < rvec.size(); i++) {
-					
+				for (size_t i = 0; i < aruco_marks.size(); i++) {
 					//drawFrameAxes(frame, cameraMatrix, distCoeffs, rvec[i], tvec[i], 0.1);
-					double distance_real = calculateDistanceToCamera(rvec[i], tvec[i], cv::Point3f(0, 0, 0));
 
-					ekf->update(tvec[i], dt);
-					cv::Point3f position = ekf->getCurrentPosition();
-					cv::Point3f future = ekf->predictFuturePosition(extrapolate_dt, 0.6);  
+					aruco_marks[i].update_ekf(dt);
+
+					aruco_marks[i].draw_mark(frame, cameraMatrix, distCoeffs);
 					
-					// 可视化
-					cv::Mat camera_location = (cv::Mat_<double>(3, 1) << 0, 0, 0);
-					cv::Mat camera_rotation = (cv::Mat_<double>(3, 1) << 0, 0, 0);
-					vector<cv::Point3f> objPts = { position,
-						 cv::Point3f(tvec[i].at<double>(0), tvec[i].at<double>(1), tvec[i].at<double>(2)),
-						 future};  // 3D点
-					vector<cv::Point2f> imgPts;
-					cv::projectPoints(objPts, camera_rotation, camera_location, cameraMatrix, distCoeffs, imgPts);
-					
-					for(int i = 0; i < imgPts.size(); i++){
-						if(i == 0){
-							cv::circle(frame, imgPts[i], 5, cv::Scalar(0, 0, 255), -1);
-						}else if(i == 1){
-							cv::circle(frame, imgPts[i], 5, cv::Scalar(0, 255, 0), -1);
-							cv::line(frame, imgPts[i-1], imgPts[i], cv::Scalar(0, 255, 0), 2);
-						}else if(i ==2){
-							cv::circle(frame, imgPts[i], 5, cv::Scalar(255, 0, 0), -1);
-							cv::line(frame, imgPts[i-1], imgPts[i], cv::Scalar(255, 0, 0), 2);
-						}
-					}
-					vector<cv::Point2f> imgPts_rect;
-					cv::Mat rvec_rect = (cv::Mat_<double>(3, 1) << 
-						future.x, future.y, future.z);
+					//publish marker to rviz2
+					cv::Mat tvec_ekf = aruco_marks[i].ekf->getCurrentPosition_Mat();
 
-					double distance_pre = calculateDistanceToCamera(rvec[i], rvec_rect, cv::Point3f(0, 0, 0));
-					cout << "distance_pre [" << i << "]" << distance_pre << endl;
-
-					cv::projectPoints(objectPoints, rvec[i], rvec_rect, cameraMatrix, distCoeffs, imgPts_rect);
-					for(int i = 0; i < imgPts_rect.size(); i++){
-						cv::line(frame, imgPts_rect[i], imgPts_rect[(i+1)%4], cv::Scalar(0, 255, 0), 1);
-					}
-
-					cv::Mat tvec_ekf = ekf->getCurrentPosition_Mat();
-					// 你自己构造的 R_cv 和 t_cv
-					geometry_msgs::msg::Pose pose = cvToPose(rvec[i], tvec_ekf);
+					geometry_msgs::msg::Pose pose = cvToPose(aruco_marks[i].marker_rvec, tvec_ekf);
 					visualization_msgs::msg::Marker marker = makeMarker(pose);
 
-					cv::Mat tvec_ekf_future = ekf->getFuturePosition_Mat(extrapolate_dt, 0.65);
-					// 你自己构造的 R_cv 和 t_cv
-					geometry_msgs::msg::Pose pose_future = cvToPose(rvec[i], tvec_ekf_future);
+					cv::Mat tvec_ekf_future = aruco_marks[i].ekf->getFuturePosition_Mat(extrapolate_dt, 0.65);
+
+					geometry_msgs::msg::Pose pose_future = cvToPose(aruco_marks[i].marker_rvec, tvec_ekf_future);
 					visualization_msgs::msg::Marker marker_future = makeMarker(pose_future, "camera", "Aruco_future", cv::Scalar(255, 0, 0));
 
 					marker_pub_->publish(marker);
 					marker_pub_future_->publish(marker_future);
 
 
-					publish_transform(rvec[i], tvec[i], "camera", "Aruco");
+					publish_transform(aruco_marks[i].marker_rvec, aruco_marks[i].marker_tvec, "camera", "Aruco");
 				}
-				cv::putText(frame, "Latency" + to_string(dt) + "ms", cv::Point2f(5, 30), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 1.5, 8);
+				cv::putText(frame, "Latency: " + to_string(dt) + "ms", cv::Point2f(5, 30), cv::FONT_HERSHEY_SIMPLEX, 0.7, cv::Scalar(0, 255, 0), 1.5, 8);
 				cv::imshow("Image", frame);
 				cv::waitKey(1);
 				
@@ -339,7 +339,6 @@ public:
      }
 
 private:
-
 	
 	rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
 	rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_future_;
@@ -360,7 +359,7 @@ private:
 	const int stateSize = 6;  // [x, y, z, vx, vy, vz]
 	const int measSize = 3;   // [x, y, z] 观测只测位置
 
-	EKF *ekf;
+	vector<ArucoMark> aruco_marks;
 };
 
 int main(int argc, char **argv) {

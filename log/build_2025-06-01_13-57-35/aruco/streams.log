@@ -1,0 +1,58 @@
+[0.008s] Invoking command in '/home/spaaaaace/Code/ArUco/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/aruco
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.112s] -- The CXX compiler identification is GNU 11.4.0
+[0.120s] -- Detecting C compiler ABI info
+[0.165s] -- Detecting C compiler ABI info - done
+[0.172s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.173s] -- Detecting C compile features
+[0.173s] -- Detecting C compile features - done
+[0.176s] -- Detecting CXX compiler ABI info
+[0.227s] -- Detecting CXX compiler ABI info - done
+[0.234s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.234s] -- Detecting CXX compile features
+[0.235s] -- Detecting CXX compile features - done
+[0.237s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.348s] -- Found Python3: /home/linuxbrew/.linuxbrew/bin/python3 (found version "3.13.1") found components: Interpreter 
+[0.431s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.462s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.466s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.472s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.481s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.493s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.526s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.528s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.601s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.621s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.659s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.665s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.717s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.718s] -- Found Threads: TRUE  
+[0.763s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[0.763s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.789s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.792s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.799s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.876s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.883s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.884s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.884s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.887s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.904s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.923s] Traceback (most recent call last):
+[0.925s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[0.925s]     from catkin_pkg.package import parse_package_string
+[0.925s] ModuleNotFoundError: No module named 'catkin_pkg'
+[0.928s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.928s]   execute_process(/home/linuxbrew/.linuxbrew/bin/python3
+[0.928s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.928s]   /home/spaaaaace/Code/ArUco/src/aruco/package.xml
+[0.928s]   /home/spaaaaace/Code/ArUco/build/aruco/ament_cmake_core/package.cmake)
+[0.928s]   returned error code 1
+[0.928s] Call Stack (most recent call first):
+[0.928s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.928s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.928s]   CMakeLists.txt:34 (ament_lint_auto_find_test_dependencies)
+[0.928s] 
+[0.928s] [0m
+[0.928s] -- Configuring incomplete, errors occurred!
+[0.938s] Invoked command in '/home/spaaaaace/Code/ArUco/build/aruco' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake /home/spaaaaace/Code/ArUco/src/aruco -DCMAKE_INSTALL_PREFIX=/home/spaaaaace/Code/ArUco/install/aruco

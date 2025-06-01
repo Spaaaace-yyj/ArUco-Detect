@@ -1,5 +1,5 @@
-#ifndef KALMAN_HPP_
-#define KALMAN_HPP_
+#ifndef _KALMAN_HPP_
+#define _KALMAN_HPP_
 
 #include <opencv2/opencv.hpp>
 

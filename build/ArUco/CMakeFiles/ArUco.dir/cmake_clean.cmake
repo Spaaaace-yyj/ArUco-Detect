@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "ArUco.pdb"
   "CMakeFiles/ArUco.dir/src/ArUco.cpp.o"
   "CMakeFiles/ArUco.dir/src/ArUco.cpp.o.d"
+  "CMakeFiles/ArUco.dir/src/aruco_mark.cpp.o"
+  "CMakeFiles/ArUco.dir/src/aruco_mark.cpp.o.d"
   "CMakeFiles/ArUco.dir/src/kalman.cpp.o"
   "CMakeFiles/ArUco.dir/src/kalman.cpp.o.d"
 )
